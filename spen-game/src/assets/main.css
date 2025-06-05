@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Qo‘shimcha stillar */
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    input, button {
+      width: 100%;
+      margin: 5px 0;
+    }
+    .roulette {
+      height: 100px;
+    }
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff5500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.roulette {
+    position: relative;
+    width: 600px;
+    height: 150px;
+    overflow: hidden;
+    border: 2px solid #ff5500;
+    background-color: #2a2a2a;
+    margin: 20px auto;
+}
+
+.roulette-inner {
+    display: flex;
+    position: absolute;
+    transition: transform 4s ease-out;
+}
+
+.case-item {
+    width: 100px;
+    height: 150px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #333;
+    border: 1px solid #444;
+    flex-shrink: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.case-item img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.pointer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #ff5500;
+    z-index: 10;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: #ff5500;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ff7733;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ff5500;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #333;
+    border: 1px solid #ff5500;
+    color: #fff;
+    margin: 5px;
+}
+
+.admin-panel, .user-info {
+    margin-top: 20px;
+}
+
+.admin-panel table, .user-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-panel th, .admin-panel td, .user-info th, .user-info td {
+    border: 1px solid #ff5500;
+    padding: 10px;
+}
+
+.case-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
